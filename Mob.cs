@@ -24,6 +24,7 @@ public partial class Mob : CharacterBody3D
 
     private void OnVisibilityNotifierScreenExited()
     {
+
         QueueFree();
     }
 }
