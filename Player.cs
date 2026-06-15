@@ -83,7 +83,6 @@ public partial class Player : CharacterBody3D
 
     private void OnMobDetectorBodyEntered(Node3D body)
     {
-        GD.Print("IDeid ");
 
         Die();
     }
