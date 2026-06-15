@@ -2,10 +2,17 @@ using Godot;
 
 public partial class Player : CharacterBody3D
 {
+    [Signal]
+    public delegate void HitEventHandler();
+
     [Export]
     public int Speed { get; set; } = 14;
     [Export]
     public int FallAcceleration { get; set; } = 75;
+    [Export]
+    public int JumpImpulse { get; set; } = 20;
+    [Export]
+    public int BounceImpulse { get; set; } = 16;
 
     private Vector3 _targetVelocity = Vector3.Zero;
 
@@ -44,7 +51,40 @@ public partial class Player : CharacterBody3D
             _targetVelocity.Y -= FallAcceleration * (float)delta;
         }
 
+        if (IsOnFloor() && Input.IsActionJustPressed("jump"))
+        {
+            _targetVelocity.Y = JumpImpulse;
+        }
+
+        for (int index = 0; index < GetSlideCollisionCount(); index++)
+        {
+            KinematicCollision3D collision = GetSlideCollision(index);
+
+            if (collision.GetCollider() is Mob mob)
+            {
+                if (Vector3.Up.Dot(collision.GetNormal()) > 0.1f)
+                {
+                    mob.Squash();
+                    _targetVelocity.Y = BounceImpulse;
+                    break;
+                }
+            }
+        }
+
         Velocity = _targetVelocity;
         MoveAndSlide();
+    }
+
+    private void Die()
+    {
+        EmitSignal(SignalName.Hit);
+        QueueFree();
+    }
+
+    private void OnMobDetectorBodyEntered(Node3D body)
+    {
+        GD.Print("IDeid ");
+
+        Die();
     }
 }
