@@ -6,6 +6,40 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_nokgg"]
 size = Vector3(1.13, 1.5, 1.755)
 
+[sub_resource type="Animation" id="Animation_nokgg"]
+resource_name = "float"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pivot/Character:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7),
+"transitions": PackedFloat32Array(0.45062566, 0.45062566, 2.3784146),
+"update": 0,
+"values": [Vector3(0, 0.35, 0), Vector3(0, 0, 0), Vector3(0, 0.65, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Pivot/Character:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.45062566, 2.3784146),
+"update": 0,
+"values": [Vector3(-0.15707964, 0, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ubaqv"]
+_data = {
+&"float": SubResource("Animation_nokgg")
+}
+
 [node name="Mob" type="CharacterBody3D" unique_id=871627934 groups=["mob"]]
 collision_layer = 2
 collision_mask = 0
@@ -14,11 +48,16 @@ script = ExtResource("1_nokgg")
 [node name="Pivot" type="Node3D" parent="." unique_id=593667801]
 
 [node name="Character" parent="Pivot" unique_id=978597183 instance=ExtResource("1_dy6sc")]
+transform = Transform3D(1, 0, 0, 0, 0.98768836, 0.15643448, 0, -0.15643448, 0.98768836, 0, 0.35, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=829966954]
 shape = SubResource("BoxShape3D_nokgg")
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." unique_id=1272196055]
 visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=791222976]
+libraries/ = SubResource("AnimationLibrary_ubaqv")
+autoplay = &"float"
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="OnVisibilityNotifierScreenExite"]
