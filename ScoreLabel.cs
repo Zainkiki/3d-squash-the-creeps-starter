@@ -9,5 +9,9 @@ public partial class ScoreLabel : Label
         _score += 1;
         Text = $"Score: {_score}";
     }
+    public int GetScore()
+    {
+        return _score;
+    }
 }
 

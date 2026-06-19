@@ -1,4 +1,7 @@
 using Godot;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 public partial class Player : CharacterBody3D
 {
@@ -83,16 +86,48 @@ public partial class Player : CharacterBody3D
         var pivot = GetNode<Node3D>("Pivot");
         pivot.Rotation = new Vector3(Mathf.Pi / 6.0f * Velocity.Y / JumpImpulse, pivot.Rotation.Y, pivot.Rotation.Z);
     }
+     private async void SendScore(int score)
+     {
+        var http = new HttpRequest();
+        GetParent().AddChild(http);
 
-    private void Die()
-    {
-        EmitSignal(SignalName.Hit);
+        var data = new Godot.Collections.Dictionary
+        {
+            {"playerName", "Player1" },
+            {"score", score }
+        };
+        string json = Json.Stringify(data);
+        GD.Print(json);
+        Godot.Error error = http.Request(
+            "http://localhost:5049/score",
+            new string[] { "Content-Type: application/json" }, 
+            HttpClient.Method.Post,
+            json
+        );
+        if (error != Godot.Error.Ok)
+        {
+            GD.PrintErr($"Request failed immediately: {error}");
+            http.QueueFree();
+            return; // Don't await if request failed
+        }
+        await ToSignal(http, "request_completed");
         QueueFree();
-    }
 
-    private void OnMobDetectorBodyEntered(Node3D body)
-    {
-
-        Die();
     }
+    private void Die()
+ {
+     EmitSignal(SignalName.Hit);
+
+     int finalScore =
+         GetNode<ScoreLabel>("../UserInterface/ScoreLabel").GetScore();
+
+     SendScore(finalScore);
+
+ }
+    
+private void OnMobDetectorBodyEntered(Node3D body)
+{
+
+    Die();
+}
 }

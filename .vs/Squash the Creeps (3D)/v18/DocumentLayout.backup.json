@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:scorelabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\mob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:mob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\w.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "ScoreLabel.cs",
               "ToolTip": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\ScoreLabel.cs",
               "RelativeToolTip": "ScoreLabel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T12:32:12.75Z",
               "EditorCaption": ""
@@ -53,33 +53,33 @@
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAcwFAAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAQwGEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T06:19:37.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Mob.cs",
               "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Mob.cs",
               "RelativeDocumentMoniker": "Mob.cs",
               "ToolTip": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Mob.cs",
               "RelativeToolTip": "Mob.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T06:18:29.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
               "ToolTip": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Main.cs",
               "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-11T08:09:14.824Z",
               "EditorCaption": ""
