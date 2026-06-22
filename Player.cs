@@ -108,7 +108,7 @@ public partial class Player : CharacterBody3D
         {
             GD.PrintErr($"Request failed immediately: {error}");
             http.QueueFree();
-            return; // Don't await if request failed
+            return;
         }
         await ToSignal(http, "request_completed");
         QueueFree();
