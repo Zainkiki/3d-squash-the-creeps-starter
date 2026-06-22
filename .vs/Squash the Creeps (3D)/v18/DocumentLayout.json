@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\leaderboardlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:leaderboardlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\mob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:mob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\scorelabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:scorelabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\mob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:mob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LeaderboardLabel.cs",
+              "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\LeaderboardLabel.cs",
+              "RelativeDocumentMoniker": "LeaderboardLabel.cs",
+              "ToolTip": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\LeaderboardLabel.cs",
+              "RelativeToolTip": "LeaderboardLabel.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T06:37:51.155Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -42,24 +59,25 @@
               "RelativeToolTip": "ScoreLabel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T12:32:12.75Z"
+              "WhenOpened": "2026-06-15T12:32:12.75Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAqwHcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwGMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T06:19:37.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Mob.cs",
               "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Mob.cs",
               "RelativeDocumentMoniker": "Mob.cs",
@@ -72,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
@@ -80,11 +98,12 @@
               "RelativeToolTip": "Main.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAqwCYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T08:09:14.824Z"
+              "WhenOpened": "2026-06-11T08:09:14.824Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "w.csproj",
               "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\w.csproj",
               "RelativeDocumentMoniker": "w.csproj",
