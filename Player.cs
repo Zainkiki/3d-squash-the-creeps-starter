@@ -99,7 +99,7 @@ public partial class Player : CharacterBody3D
         string json = Json.Stringify(data);
         GD.Print(json);
         Godot.Error error = http.Request(
-            "http://localhost:5049/score",
+            "http://zian.malkaersig.dk/score",
             new string[] { "Content-Type: application/json" }, 
             HttpClient.Method.Post,
             json
@@ -112,6 +112,7 @@ public partial class Player : CharacterBody3D
         }
         await ToSignal(http, "request_completed");
         http.QueueFree();
+        QueueFree();
 
     }
     private async void Die()

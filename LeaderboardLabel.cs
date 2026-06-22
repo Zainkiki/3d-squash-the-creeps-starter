@@ -20,7 +20,7 @@ public partial class LeaderboardLabel : Label
 	{
 		Visible = true;
 
-		var error = _httpRequest.Request("http://localhost:5049/leaderboard");
+		var error = _httpRequest.Request("http://zian.malkaersig.dk/leaderboard");
 
 		if (error != Error.Ok)
 		{
