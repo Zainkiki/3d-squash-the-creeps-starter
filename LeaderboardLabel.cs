@@ -6,21 +6,29 @@ using System.Text.Json;
 public partial class LeaderboardLabel : Label
 {
 	private HttpRequest _httpRequest;
-	public override void _Ready()
-	{
-		_httpRequest = new HttpRequest();
-		AddChild(_httpRequest);
+    public override void _Ready()
+    {
+        Visible = false;
+
+        _httpRequest = new HttpRequest();
+        AddChild(_httpRequest);
 
         _httpRequest.RequestCompleted += OnRequestCompleted;
+    }
+	
+	public void ShowLeaderboard()
+	{
+		Visible = true;
+
 		var error = _httpRequest.Request("http://localhost:5049/leaderboard");
 
 		if (error != Error.Ok)
 		{
-			Text = $"Request faild: {error}";
+			Text = $"Request failed: {error}";
 		}
 
-    }
-	private void OnRequestCompleted(
+	}
+    private void OnRequestCompleted(
 		long result,
 		long responseCode,
 		string[] headers,
@@ -33,13 +41,17 @@ public partial class LeaderboardLabel : Label
 		{
 			List<PlayerScore> leaderboard = JsonSerializer.Deserialize<List<PlayerScore>>(json);
 
-			string displayText = "Leaderboard\n\n";
+            leaderboard.Sort((a, b) => b.score.CompareTo(a.score));
 
-			foreach (var player in leaderboard)
-			{
-				displayText += $"{player.playerName}: {player.score}\n";
-			}
-			Text = displayText;
+            string displayText = "Top 5\n\n";
+
+            int count = Math.Min(5, leaderboard.Count);
+
+            for (int i = 0; i < count; i++)
+            {
+                displayText += $"{i + 1}. {leaderboard[i].playerName} - {leaderboard[i].score}\n";
+            }
+            Text = displayText;
 		}
 		catch (Exception ex)
 		{

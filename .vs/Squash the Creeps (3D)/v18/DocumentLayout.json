@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\leaderboardlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:leaderboardlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\leaderboardlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|solutionrelative:leaderboardlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58FDF516-8986-4C87-8F83-7EE374E1A251}|Squash the Creeps (3D).csproj|c:\\users\\u30285\\documents\\3d-squash-the-creeps-starter\\scorelabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LeaderboardLabel.cs",
               "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\LeaderboardLabel.cs",
               "RelativeDocumentMoniker": "LeaderboardLabel.cs",
               "ToolTip": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\LeaderboardLabel.cs",
               "RelativeToolTip": "LeaderboardLabel.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwD8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-22T06:37:51.155Z",
               "EditorCaption": ""
@@ -64,13 +64,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\u30285\\Documents\\3d-squash-the-creeps-starter\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAcwGMAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAYwH0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T06:19:37.513Z",
               "EditorCaption": ""
@@ -85,8 +85,7 @@
               "RelativeToolTip": "Mob.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAqwCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T06:18:29.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-15T06:18:29.838Z"
             },
             {
               "$type": "Document",
@@ -98,8 +97,7 @@
               "RelativeToolTip": "Main.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAqwCYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T08:09:14.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T08:09:14.824Z"
             },
             {
               "$type": "Document",

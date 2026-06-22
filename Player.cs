@@ -86,7 +86,7 @@ public partial class Player : CharacterBody3D
         var pivot = GetNode<Node3D>("Pivot");
         pivot.Rotation = new Vector3(Mathf.Pi / 6.0f * Velocity.Y / JumpImpulse, pivot.Rotation.Y, pivot.Rotation.Z);
     }
-     private async void SendScore(int score)
+     private async Task SendScore(int score)
      {
         var http = new HttpRequest();
         GetParent().AddChild(http);
@@ -111,19 +111,23 @@ public partial class Player : CharacterBody3D
             return;
         }
         await ToSignal(http, "request_completed");
-        QueueFree();
+        http.QueueFree();
 
     }
-    private void Die()
+    private async void Die()
  {
      EmitSignal(SignalName.Hit);
 
      int finalScore =
          GetNode<ScoreLabel>("../UserInterface/ScoreLabel").GetScore();
 
-     SendScore(finalScore);
+     await SendScore(finalScore);
 
- }
+        var leaderboard =
+            GetNode<LeaderboardLabel>("../UserInterface/LeaderboardLabel");
+
+        leaderboard.ShowLeaderboard();
+    }
     
 private void OnMobDetectorBodyEntered(Node3D body)
 {
