@@ -93,13 +93,14 @@ public partial class Player : CharacterBody3D
 
         var data = new Godot.Collections.Dictionary
         {
-            {"playerName", "Player1" },
+            {"playerName", GameData.PlayerName },
             {"score", score }
         };
         string json = Json.Stringify(data);
         GD.Print(json);
         Godot.Error error = http.Request(
-            "http://zian.malkaersig.dk/score",
+            //"http://zian.malkaersig.dk/score",
+            "http://localhost:5049/score",
             new string[] { "Content-Type: application/json" }, 
             HttpClient.Method.Post,
             json
@@ -129,6 +130,7 @@ public partial class Player : CharacterBody3D
 
         leaderboard.ShowLeaderboard();
     }
+
     
 private void OnMobDetectorBodyEntered(Node3D body)
 {

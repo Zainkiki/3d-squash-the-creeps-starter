@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://le7mokxm207a"]
+
+[ext_resource type="Script" uid="uid://memj7g5gly0n" path="res://StartMenu.cs" id="1_jwbto"]
+[ext_resource type="PackedScene" uid="uid://2wap0283yk0r" path="res://main.tscn" id="2_ia0g5"]
+
+[node name="StartMenu" type="Control" unique_id=91737430]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jwbto")
+GameScene = ExtResource("2_ia0g5")
+
+[node name="NameInput" type="LineEdit" parent="." unique_id=1352916765]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = -20.5
+offset_right = 102.0
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Donkey"
+alignment = 1
+
+[node name="StartButton" type="Button" parent="." unique_id=674937672]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -88.0
+offset_top = -82.0
+offset_right = 88.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Start Game"
