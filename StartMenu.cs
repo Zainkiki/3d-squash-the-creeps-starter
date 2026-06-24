@@ -7,10 +7,13 @@ public partial class StartMenu : Control
 	[Export] 
 	public PackedScene GameScene;
 	private LineEdit _nameInput;
+	private LineEdit _leaderboardIPInput;
+
 
 	public override void _Ready()
 	{
 		_nameInput = GetNode<LineEdit>("NameInput");
+		_leaderboardIPInput = GetNode<LineEdit>("LeaderboardIPInput");
 		GetNode<Button>("StartButton").Pressed += OnStartPressed;
 	}
 	private void OnStartPressed()
@@ -20,10 +23,17 @@ public partial class StartMenu : Control
 			playerName = "Player";
 
 		GameData.PlayerName = playerName;
-		GetTree().ChangeSceneToPacked(GameScene);
+
+		string leaderboardIP = _leaderboardIPInput.Text;
+		if (leaderboardIP == "")
+			leaderboardIP = "localhost:5049";
+		GameData.LeaderboardIP = leaderboardIP;
+        GetTree().ChangeSceneToPacked(GameScene);
+
     }
-	
-	public override void _Process(double delta)
+
+
+    public override void _Process(double delta)
 	{
 	}
 }

@@ -99,8 +99,7 @@ public partial class Player : CharacterBody3D
         string json = Json.Stringify(data);
         GD.Print(json);
         Godot.Error error = http.Request(
-            //"http://zian.malkaersig.dk/score",
-            "http://localhost:5049/score",
+            $"http://{GameData.LeaderboardIP}/score",
             new string[] { "Content-Type: application/json" }, 
             HttpClient.Method.Post,
             json
