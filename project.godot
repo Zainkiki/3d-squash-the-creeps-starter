@@ -28,6 +28,7 @@ MusicPlayer="*uid://dwgxgvhij3gfx"
 
 window/size/viewport_width=720
 window/size/viewport_height=540
+window/size/resizable=false
 
 [dotnet]
 
